@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block title %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='styles/login.css') }}"
+/>
+<title>Login</title> {% endblock %} {% block content %}
+
+<div class="loginbox">
+  <img src="static/avatar.png" class="avatar" />
+  <h1>Login Here</h1>
+  <form method="post">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+      {{ form.phoneNum.label }} {{ form.phoneNum(class="form-control") }} {% for error
+      in form.phoneNum.errors %}
+      <span class="error-it">{{ error }}</span>
+      {% endfor %}
+    </div>
+    <br>
+    <div class="form-group">
+      {{ form.password.label }} {{ form.password(class="form-control") }} {% for
+      error in form.password.errors %}
+      <span class="error-it">{{ error }}</span>
+      {% endfor %}
+    </div>
+    <div class="form-group">
+      {{ form.submit(class="form-control btn btn-primary") }}
+    </div>
+    <a href="{{ url_for('not_logged') }}">Continue without logging in?</a>
+    <br>
+    <a href="{{ url_for('register') }}">Don't have an account yet?</a>
+  </form>
+  <div class="end">
+    <br>
+    {% with messages = get_flashed_messages() %} {% if messages %}
+    <span class="final">{{ messages[0] }}</span>
+    <br>
+    {% endif %} {% endwith %}
+  </div>
+</div>
+{% endblock %}

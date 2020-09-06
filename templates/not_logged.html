@@ -1,0 +1,93 @@
+{% extends 'base.html' %} {% block title %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='styles/not_logged.css') }}"
+/>
+<title>Kratos studio</title> {% endblock %} {% block content %}
+<div class="imp">
+  <div class="blog-post">
+    <div class="blog-post-img">
+      <img src="../static/pullups.jpg" />
+    </div>
+    <div class="blog-post-info">
+      <h1 class="blog-post-title">{{ class1.class_title }}</h1>
+      <p class="blog-post-text">
+          {{class1.class_desc}}
+      </p>
+      <a href="{{ url_for("login") }}">You need to login to join</a>
+    </div>
+  </div>
+</div>
+<div class="imp">
+  <div class="blog-post">
+    <div class="blog-post-img">
+      <img src="../static/pullups.jpg" />
+    </div>
+    <div class="blog-post-info">
+      <h1 class="blog-post-title">{{ class2.class_title }}</h1>
+      <p class="blog-post-text">
+          {{class2.class_desc}}
+      </p>
+      <a href="{{ url_for("login") }}">You need to login to join</a>
+    </div>
+  </div>
+</div>
+<div class="imp">
+  <div class="blog-post">
+    <div class="blog-post-img">
+      <img src="../static/pullups.jpg" />
+    </div>
+    <div class="blog-post-info">
+      <h1 class="blog-post-title">{{class3.class_title}}</h1>
+      <p class="blog-post-text">
+        {{class3.class_desc}}
+      </p>
+      <a href="{{ url_for("login") }}">You need to login to join</a>
+    </div>
+  </div>
+</div>
+<div class="imp">
+  <div class="blog-post">
+    <div class="blog-post-img">
+      <img src="../static/pullups.jpg" />
+    </div>
+    <div class="blog-post-info">
+      <h1 class="blog-post-title">{{ class4.class_title }}</h1>
+      <p class="blog-post-text">
+        {{class4.class_desc}}
+      </p>
+      <a href="{{ url_for("login") }}">You need to login to join</a>
+    </div>
+  </div>
+</div>
+<div class="imp">
+  <div class="blog-post">
+    <div class="blog-post-img">
+      <img src="../static/pullups.jpg" />
+    </div>
+    <div class="blog-post-info">
+      <h1 class="blog-post-title">{{ class5.class_title }}</h1>
+      <p class="blog-post-text">
+        {{class5.class_desc}}
+      </p>
+      <a href="{{ url_for("login") }}">You need to login to join</a>
+    </div>
+  </div>
+</div>
+<div class="imp">
+  <div class="blog-post">
+    <div class="blog-post-img">
+      <img src="../static/pullups.jpg" />
+    </div>
+    <div class="blog-post-info">
+      <h1 class="blog-post-title">{{ class6.class_title }}</h1>
+      <p class="blog-post-text">
+        {{class6.class_desc}}
+      </p>
+      <a href="{{ url_for("login") }}">You need to login to join</a>
+    </div>
+  </div>
+</div>
+<div class="empty"></div>
+
+{% endblock %}

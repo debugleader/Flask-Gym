@@ -1,0 +1,128 @@
+{% extends 'base.html' %} {% block title %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='styles/exercises.css') }}"
+/>
+<title>Exercises</title> {% endblock %} {% block content %}
+<div>
+  <section class="section section-light">
+    <h2 id="special-1">Our exercises section</h2>
+    <p>
+      Strength training can help you get stronger and look and feel better with
+      just a few short sessions each week. You can do strength training with
+      free weights such as barbells and dumbbells, weight machines, or with no
+      equipment at all!
+    </p>
+  </section>
+
+  <div class="pimg2">
+    <div class="ptext"></div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Bodyweight exercises</h2>
+    <p>
+      Not all bodyweight exercises and workouts are created equal though, and
+      knowing that, we expect you’ll want to find out which moves are best,
+      right?
+    </p>
+    <div class="containero">
+      <div class="container">
+        <div class="card cardo">
+          <div class="imgbox">
+            <img src="../static/pushups.jpg" />
+          </div>
+          <div class="content">
+            <h2>Pushups</h2>
+            <p>
+              Traditional pushups are beneficial for building upper body
+              strength. They work the triceps, pectoral muscles, and shoulders.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox">
+            <img src="../static/squats.jpg" />
+          </div>
+          <div class="content">
+            <h2>Squats</h2>
+            <p>
+              The most obvious benefit of squats is building your leg muscles –
+              quadriceps, hamstrings, and calves. These drills also create an
+              anabolic environment.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox">
+            <img src="../static/pullups.jpg" />
+          </div>
+          <div class="content">
+            <h2>Pullups</h2>
+            <p>
+              The pullup is considered an advanced exercise. It’s more difficult
+              than the chinup. But the pullup can be done on an assisted machine
+              for beginners.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="pimg3">
+    <div class="ptext"></div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Freeweight exercises</h2>
+    <p>
+      Free weight exercises are some of the best ways to build strength as well
+      as improve your functional fitness levels.
+    </p>
+  </section>
+  <div class="containero">
+    <div class="container">
+      <div class="card cardo car">
+        <div class="imgbox" id="spe1">
+          <img src="../static/curls.png" />
+        </div>
+        <div class="content contento">
+          <h2>Curls</h2>
+          <p>
+            It’s a great movement for your upper body workout, whether you’re a
+            beginner or an experienced lifter..
+          </p>
+        </div>
+      </div>
+      <div class="card car">
+        <div class="imgbox" id="spe2">
+          <img src="../static/shoulderpress.jpg" />
+        </div>
+        <div class="content contento">
+          <h2>Shoulder press</h2>
+          <p>
+            Powerlifters, weightlifters, strongman competitors, and functional
+            fitness athletes can all benefit from having a strong overhead
+            press.
+          </p>
+        </div>
+      </div>
+      <div class="card car">
+        <div class="imgbox" id="spe3">
+          <img src="../static/deadlifts.jpg" />
+        </div>
+        <div class="content contento">
+          <h2>Deadlifts</h2>
+          <p>
+            Deadlifting increases your core strength and adds to core stability,
+            as well as building overall muscle mass.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pimg1"></div>
+</div>
+{% endblock %}

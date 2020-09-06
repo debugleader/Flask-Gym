@@ -1,0 +1,181 @@
+@import "base_style.css";
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+#special-1 {
+  font-family: "Aldrich", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#special {
+  margin-top: 2rem;
+}
+.pimg1 {
+  background-image: url("../image1.jpg");
+  min-height: 900px;
+}
+
+.pimg2 {
+  background-image: url("../image2.jpg");
+  min-height: 550px;
+}
+
+.pimg3 {
+  background-image: url("../image3.jpg");
+  min-height: 350px;
+}
+
+.section {
+  text-align: center;
+  padding: 60px 100px;
+  font-size: 1.4rem;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+.navbar {
+  z-index: 2000;
+}
+.card h2{
+  font-family: 'Aldrich', sans-serif;
+}
+.containero {
+  margin-left: 80px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #282e34;
+}
+.container {
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.contento{
+  font-size: 1.4rem
+}
+.container .card {
+  max-width: 300px;
+  background: white;
+  height: 215px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+  transition: .3s ease-in-out;
+}
+.container .card:hover{
+  height: 460px;
+}
+.container .card .imgbox {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  top: -60px;
+  left: 26px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+.container .card .imgbox img{
+  max-width: 100%;
+  border-radius: 20px;
+}
+.container .card .content{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+.container .card:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: .3s;
+}
+@media only screen and (max-width: 600px){
+  .containero{
+    margin-left: 0px;
+  }
+  .container .card{
+    margin-top: 50px;
+  }
+  .container .card .imgbox{
+    left: 3px;
+  }
+  .container .card:hover{
+    height: 560px;
+  }
+  .cardo{
+    margin-top: 0px;
+  }
+  .container .cardo:hover{
+    height: 480px;
+  }
+  .car{
+    left: 60px;
+  }
+  #spe1, #spe2, #spe3{
+    left: 28px;
+  }
+}
+/* @media only screen and (min-width: 600px) {
+  .cont-1 {
+    margin-left: 25rem;
+  }
+} */

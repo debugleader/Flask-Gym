@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+body{
+    background: url(../pic1.jpg);
+    background-size: cover;
+}
+div a{
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+.container{
+    font-family: 'Aldrich', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.calendar{
+    width: 300px;
+    height: auto;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 1px rgba(179,157,219,1);
+}
+.calendar .image{
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient( 110.6deg,  rgba(179,157,219,1) 7%, rgba(150,159,222,1) 47.7%, rgba(24,255,255,1) 100.6% );
+    background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.calendar .image h2{
+    color: white;
+    text-shadow: black 3px 3px 3px;
+}
+.calendar .push{
+    padding-left: 2px;
+}
+.calendar .date{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
+.calendar .date div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    color: #262626;
+}
+.calendar .date div.day{
+    font-weight: 700;
+}
+.calendar .date div.day:first-child,
+.calendar .date div.number:nth-child(7n + 1){
+    color: #ff685d;
+}
+.calendar .date div.number.active{
+    background: #009688;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.calendar .date .number{
+    transition: all 200ms ease;
+}
+.calendar .date .number:hover{
+    background: grey;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+@media only screen and (min-width: 900px) {
+    .calendar{
+        font-size: 19px;
+        width: 400px;
+    }
+    .calendar .push{
+        padding-left: 6px;
+    }
+    .calendar .date .number{
+        padding: 8px;
+    }
+    .calendar .date{
+        grid-gap: 30px;
+    }
+}

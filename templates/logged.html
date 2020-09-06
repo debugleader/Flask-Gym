@@ -1,0 +1,119 @@
+{% extends 'base.html' %} {% block title %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='styles/not_logged.css') }}"
+/>
+<title>Kratos studio</title> {% endblock %} {% block content %}
+<div class="imp">
+  <div class="blog-post">
+    <div class="blog-post-img">
+      <img src="../static/pullups.jpg" />
+    </div>
+    <div class="blog-post-info">
+      <h1 class="blog-post-title">{{class1.class_title}}</h1>
+      <p class="blog-post-text">
+        {{class1.class_desc}}
+      </p> 
+      {% if numb.joined_num == 6 and numb.class_name == 'Class1' %}
+        <a href="mailto:trainer@gym.com">Full class !</a>
+      {% else %}
+        <a href="{{ url_for('class1manage')}}">Join the class: {{class1.joined_num}}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<div class="imp">
+  <div class="blog-post">
+    <div class="blog-post-img">
+      <img src="../static/pullups.jpg" />
+    </div>
+    <div class="blog-post-info">
+      <h1 class="blog-post-title">{{ class2.class_title }}</h1>
+      <p class="blog-post-text">
+        {{class2.class_desc}}
+      </p>
+      {% if numb.joined_num == 6 and numb.class_name == 'Class2' %}
+        <a href="mailto:trainer@gym.com">Full class !</a>
+      {% else %}
+        <a href="{{ url_for('class2manage')}}">Join the class: {{class2.joined_num}}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<div class="imp">
+  <div class="blog-post">
+    <div class="blog-post-img">
+      <img src="../static/pullups.jpg" />
+    </div>
+    <div class="blog-post-info">
+      <h1 class="blog-post-title">{{class3.class_title}}</h1>
+      <p class="blog-post-text">
+        {{class3.class_desc}}
+      </p>
+      {% if numb.joined_num == 6 and numb.class_name == 'Class3' %}
+        <a href="mailto:trainer@gym.com">Full class !</a>
+      {% else %}
+        <a href="{{ url_for('class3manage')}}">Join the class: {{class3.joined_num}}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<div class="imp">
+  <div class="blog-post">
+    <div class="blog-post-img">
+      <img src="../static/pullups.jpg" />
+    </div>
+    <div class="blog-post-info">
+      <h1 class="blog-post-title">{{class4.class_title}}</h1>
+      <p class="blog-post-text">
+        {{class4.class_desc}}
+      </p>
+      {% if numb.joined_num == 6 and numb.class_name == 'Class4' %}
+        <a href="mailto:trainer@gym.com">Full class !</a>
+      {% else %}
+        <a href="{{ url_for('class4manage')}}">Join the class: {{class4.joined_num}}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<div class="imp">
+  <div class="blog-post">
+    <div class="blog-post-img">
+      <img src="../static/pullups.jpg" />
+    </div>
+    <div class="blog-post-info">
+      <h1 class="blog-post-title">{{class5.class_title}}</h1>
+      <p class="blog-post-text">
+       {{class5.class_desc}}
+      </p>   
+      {% if numb.joined_num == 6 and numb.class_name == 'Class5' %}
+        <a href="mailto:trainer@gym.com">Full class !</a>
+      {% else %}
+        <a href="{{ url_for('class5manage')}}">Join the class: {{class5.joined_num}}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<div class="imp">
+  <div class="blog-post">
+    <div class="blog-post-img">
+      <img src="../static/pullups.jpg" />
+    </div>
+    <div class="blog-post-info">
+      <h1 class="blog-post-title">{{class6.class_title}}</h1>
+      <p class="blog-post-text">
+        {{class6.class_desc}}
+      </p>  
+      {% if numb.joined_num == 6 and numb.class_name == 'Class6' %}
+        <a href="mailto:trainer@gym.com">Full class !</a>
+      {% elif numbo.joined_name == current_user.fullName and numb.class_name == 'Class6' %}
+        <a href="{{ url_for('class6manage')}}">Leave the class: {{class6.joined_num}}</a>
+      {% else %}
+        <a href="{{ url_for('class6manage')}}">Join the class: {{class6.joined_num}}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<div class="empty"></div>
+
+{% endblock %}

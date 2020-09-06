@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Aldrich", sans-serif;
+}
+.logo {
+  position: relative;
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.logo span {
+  color: #d72f2f;
+}
+.toggle {
+  max-width: 100%;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px;
+  z-index: 1000;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 100px;
+  background: #111;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background: red;
+  transform-origin: top;
+  transform: skewX(-25deg);
+  z-index: 1;
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  pointer-events: none;
+}
+.textBox {
+  position: relative;
+  max-width: 600px;
+  z-index: 2;
+}
+.textBox h2 {
+  color: white;
+  font-size: 3rem;
+}
+.textBox p {
+  color: white;
+  font-size: 1.1rem;
+  margin: 5px 0 25px;
+}
+.textBox a {
+  position: relative;
+  color: black;
+  display: inline-block;
+  background: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-family: "Aldrich", sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  transition: all 0.4s ease;
+}
+.textBox a:hover {
+  background: rgb(0, 217, 255);
+  border-radius: 12px;
+}
+.imgBox {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  z-index: 2;
+}
+.imgBox img {
+  position: absolute;
+  bottom: 0;
+  height: 90%;
+  z-index: 2000;
+}
+.sci {
+  position: absolute;
+  bottom: 20px;
+  letter-spacing: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sci li {
+  list-style: none;
+}
+.sci li a {
+  display: inline-block;
+  margin-right: 15px;
+}
+.sci li a img {
+  transform: scale(0.5);
+  filter: invert(1);
+}
+@media (max-width: 991px) {
+  header {
+    padding: 20px 50px;
+  }
+  .logo span {
+    color: white;
+  }
+  .banner {
+    padding: 150px 50px 0;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .banner .textBox {
+    max-width: 100%;
+  }
+  .sci {
+    z-index: 1000;
+    left: initial;
+    right: 20px;
+    flex-direction: column;
+  }
+}

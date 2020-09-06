@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+  </head>
+  <body class="animate__animated animate__fadeIn">
+    <header>
+      <a href="#" class="logo animate__animated animate__bounceInDown">Kratos <span>Studio</span></a>
+      <div class="toggle animate__animated animate__bounceInDown"><img src="../static/toggle.png" /></div>
+    </header>
+    <div class="banner">
+      <video src="../static/bg.mp4" autoplay muted loop type="mp4"></video>
+      <div class="textBox">
+        <h2 class="animate__animated animate__lightSpeedInLeft">More than fitness</h2>
+        <p class="animate__animated animate__lightSpeedInLeft">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+          molestias deleniti officia quae ratione optio praesentium dolorum
+          facilis. Nihil ipsum magni officia quod voluptate quaerat vero at
+          animi fugiat hic!
+        </p>
+        <a href="{{ url_for('food') }}" class="animate__animated animate__lightSpeedInLeft">Join us</a>
+      </div>
+      <div class="imgBox">
+        <!-- <img src="../static/import5.png" /> -->
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#" class="animate__animated animate__bounceInUp"><img src="../static/facebook.png" alt="facebook" /></a>
+        </li>
+        <li>
+          <a href="#" class="animate__animated animate__bounceInUp"><img src="../static/instagram.png" alt="instagram" /></a>
+        </li>
+        <li>
+          <a href="#" class="animate__animated animate__bounceInUp"><img src="../static/twitter.png" alt="twitter" /></a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

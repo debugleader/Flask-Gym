@@ -1,0 +1,132 @@
+{% extends 'base.html' %} {% block title %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='styles/food.css') }}"
+/>
+<title>Food</title> {% endblock %} {% block content %}
+<div>
+  <section class="section section-light">
+    <h2 id="special-1">Our food section</h2>
+    <p>
+      Eating well is fundamental to good health and well-being. Healthy eating
+      helps us to maintain a healthy weight and reduces our risk of type 2
+      diabetes, high blood pressure, high cholesterol and the risk of developing
+      cardiovascular disease and some cancers.!
+    </p>
+  </section>
+
+  <div class="pimg2">
+    <div class="ptext">
+      <!-- <span class="border"> Vegetables </span> -->
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Vegetables</h2>
+    <p>
+      Filled with crucial immune-boosting antioxidants, fiber, B-vitamins, and
+      minerals, they’re the "real deal" that can make a big impact on your
+      health..
+    </p>
+    <div class="containero">
+      <div class="container">
+        <div class="card cardo">
+          <div class="imgbox">
+            <img src="../static/spinach.jpg" />
+          </div>
+          <div class="content">
+            <h2>Spinach</h2>
+            <p>
+              Spinach is a leafy green vegetable. It is also a great source of
+              calcium, vitamins, iron, and antioxidants.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox">
+            <img src="../static/kale.jpg" />
+          </div>
+          <div class="content">
+            <h2>Kale</h2>
+            <p>
+              Kale is a very popular leafy green vegetable with several health
+              benefits. It provides 7 calories per cup of raw leaves and good
+              amounts of vitamins.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox">
+            <img src="../static/broccoli.jpg" />
+          </div>
+          <div class="content">
+            <h2>Broccoli</h2>
+            <p>
+              Broccoli is an incredibly healthful vegetable that belongs to the
+              same family as cabbage, kale, and cauliflower. These are all
+              cruciferous vegetables.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="pimg3">
+    <div class="ptext">
+      <!-- <span class="border"> Fruits </span> -->
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Fruits</h2>
+    <p>
+      People who eat more fruits and vegetables as part of an overall healthy
+      diet are likely to have a reduced risk of some chronic diseases. Fruits
+      provide nutrients vital for health and maintenance of your body.
+    </p>
+  </section>
+  <div class="containero">
+    <div class="container">
+      <div class="card cardo car">
+        <div class="imgbox" id="spe1">
+          <img src="../static/grapefruit.jpg" />
+        </div>
+        <div class="content contento">
+          <h2>Grapefruit</h2>
+          <p>
+            Besides being a good source of vitamins and minerals, it is known
+            for its ability to aid weight loss and reduce insulin resistance..
+          </p>
+        </div>
+      </div>
+      <div class="card car">
+        <div class="imgbox" id="spe2">
+          <img src="../static/avocado.jpg" />
+        </div>
+        <div class="content contento">
+          <h2>Avocado</h2>
+          <p>
+            Most fruits are high in carbs, while avocado is low in carbs and
+            comprised mainly of healthy fats.
+          </p>
+        </div>
+      </div>
+      <div class="card car">
+        <div class="imgbox" id="spe3">
+          <img src="../static/blueberries.jpg" />
+        </div>
+        <div class="content contento">
+          <h2>Blueberries</h2>
+          <p>
+            hey have an impressive nutrition profile, being particularly high in
+            fiber, vitamin C, vitamin K and manganese.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pimg1"></div>
+</div>
+{% endblock %}
