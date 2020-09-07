@@ -18,8 +18,6 @@ lxml==4.5.1
 MarkupSafe==1.1.1
 python-dotenv==0.13.0
 pytz==2020.1
-pyuic5-tool==0.0.1
-redis==3.5.3
 requests==2.23.0
 six==1.15.0
 soupsieve==2.0.1
