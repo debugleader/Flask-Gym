@@ -17,6 +17,6 @@ python app.py
 How could it be improved?
 ------
 This project has been speed coded, as I did not have the proper time because of other life obligations and because of the short deadline for the project.
-So it's very easy to find better ways to improve the readability of the code, adding comments, using a more functions....
+So it's very easy to find better ways to improve the readability of the code, adding comments, using more functions....
 
 ###### Thank you for having a look here.
