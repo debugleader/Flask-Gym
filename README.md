@@ -5,11 +5,20 @@ an understanding of dynamic routing(URLs) and web templating engines.
 
 How to try the web app?
 ------
+* Use the web hosted version
+
+> [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](http://kratos-studio.herokuapp.com/)
+
+* Host it on your own machine.
+
 ```
 cd into the repository location in your machine
 ```
 ```python
 pip install -r requirements.txt
+```
+```python
+python configure.py
 ```
 ```python
 python app.py
