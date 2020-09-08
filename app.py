@@ -8,10 +8,11 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_admin import Admin, AdminIndexView
 from flask_admin.contrib.sqla import ModelView
 from datetime import datetime, timedelta
+import os
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///gym.db'
-app.config['SECRET_KEY'] = '1b83eb3d8146fc99502bf256dfa3d019a9i1h23'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 login_manager = LoginManager()
@@ -291,4 +292,4 @@ def class6manage():
     return redirect(url_for('login'))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
