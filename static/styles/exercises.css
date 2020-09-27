@@ -8,6 +8,16 @@ html {
   font-weight: 400;
   line-height: 1.8em;
   color: #666;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 #special-1 {
   font-family: "Aldrich", sans-serif;
