@@ -159,34 +159,34 @@ html {
   margin-top: -40px;
   transition-delay: .3s;
 }
-@media only screen and (max-width: 600px){
-  .containero{
+@media only screen and (max-width: 600px) {
+  .containero {
     margin-left: 0px;
   }
-  .container .card{
+  .containera {
+    margin-left: -20px;
+  }
+  .container .card {
     margin-top: 50px;
   }
-  .container .card .imgbox{
+  .container .card .imgbox {
     left: 3px;
   }
-  .container .card:hover{
-    height: 560px;
+  .container .card:hover {
+    height: 580px;
   }
-  .cardo{
+  .cardo {
     margin-top: 0px;
   }
-  .container .cardo:hover{
-    height: 480px;
+  .container .cardo:hover {
+    height: 528px;
   }
-  .car{
+  .car {
     left: 60px;
   }
-  #spe1, #spe2, #spe3{
+  #spe1,
+  #spe2,
+  #spe3 {
     left: 28px;
   }
 }
-/* @media only screen and (min-width: 600px) {
-  .cont-1 {
-    margin-left: 25rem;
-  }
-} */
