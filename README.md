@@ -30,5 +30,10 @@ So it's very easy to find better ways to improve the readability of the code, ad
 
 ---
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/debugleader/Flask-Gym)
-[![forthebadge](https://forthebadge.com/images/badges/gluten-free.svg)](https://github.com/debugleader/Flask-Gym)
+> [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/debugleader/Flask-Gym)
+
+---
+
+> [![forthebadge](https://forthebadge.com/images/badges/gluten-free.svg)](https://github.com/debugleader/Flask-Gym)
+
+---
