@@ -3,6 +3,12 @@ Flask-Gym
 A website I built for a friend who had a project in university, I learned how to use session management, tokens, in-depth greater understanding of ORMs, and
 an understanding of dynamic routing(URLs) and web templating engines.
 
+---
+
+> <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80" width="600"  />
+
+---
+
 How to try the web app?
 ------
 * Use the web hosted version
